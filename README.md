@@ -29,5 +29,9 @@ It also has a "config mode" with a secondary button that allows the user to indi
 Here there's only the schematic files but not the gerbers, since the PCB I made uses a space for a *2032 battery holder* (a small 3V coin battery, the same as the one used on **d1ce**) but the requirements for the **max7219** demands 5v (more or less). I totally forgot about this, so in return I have a fully functional PCB that needs to be hooked up to an external 5v source or, at least, do some creativity with other components to make it work :_ D
 
 ## Useful links
-*coming soon*
+[https://embeddedthoughts.com/2016/06/06/attiny85-introduction-to-pin-change-and-timer-interrupts/](https://embeddedthoughts.com/2016/06/06/attiny85-introduction-to-pin-change-and-timer-interrupts/) Some interrupts and timers info
+
+[https://tinusaur.org/2019/01/06/interfacing-a-max7219-driven-led-matrix-with-attiny85/](https://tinusaur.org/2019/01/06/interfacing-a-max7219-driven-led-matrix-with-attiny85/) **max7219** with attiny85
+
+[https://docs.kicad.org/5.1/en/getting_started_in_kicad/getting_started_in_kicad.html](https://docs.kicad.org/5.1/en/getting_started_in_kicad/getting_started_in_kicad.html) I followed the "Getting started" section from the **KiCad docs** to learn the basics about the whole process of designing and making the boards
 
