@@ -1,6 +1,6 @@
-# attiny85_dices
+# attiny85_dice
 
-I started this project to learn more about how to design a PCB from scratch, so I wrote two different sets of dices in order to flash them into a couple of attiny85's.
+I started this project to learn more about how to design a PCB from scratch, so I wrote two different sets of dice in order to flash them into a couple of attiny85's.
 
 - **d1ce** is a single d6 dice that uses 7 leds to show each dot. A **standard 8-bit shifter** is used to control the different sides
 - **dic3** is a three-dice-pack that uses different led segments to display numeric values up to 99. It uses a **max7219** to control the numbers and it allows different sides for each dice (so you can "roll" one d20 and two d8, for example)
@@ -14,7 +14,7 @@ Both work in a *similar* way:
 
 This was one of my first approach on timers and interrupts for the AVRs micros, so I'm sure there are lots of improvements that can be made.
 
-Maybe using a timer to set a random seed is not the best way to handle it, but for simple picks for a dummy dice I think it's enough; and to prevent having only one "initial value", the seed changes on every roll (otherwise -if we set the seed **only** on the beginning, for example- it's more likely to have two "equal dices" only by matching that initial roll).
+Maybe using a timer to set a random seed is not the best way to handle it, but for simple picks for a dummy dice I think it's enough; and to prevent having only one "initial value", the seed changes on every roll (otherwise -if we set the seed **only** on the beginning, for example- it's more likely to have two "equal dice" only by matching that initial roll).
 
 ## d1ce
 The d6 dice was the first one and it's a single *dice.c* file that handles all the interrupts, timers and 8-bit shifter operations (three pins on that: *data*, *clock* and *latch*).
