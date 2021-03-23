@@ -1,4 +1,4 @@
-# attiny85_dices
+# attiny85_dice
 
 I started this project to learn more about how to design a PCB from scratch, so I wrote two different sets of dices in order to flash them into a couple of attiny85's.
 
